@@ -1,8 +1,5 @@
 import {Component, Input} from '@angular/core';
 
-type VerticalPosition = 'top' | 'center' | 'bottom';
-type HorizontalPosition = 'left' | 'center' | 'right';
-
 @Component({
     selector: 'slide-chapter-start',
     templateUrl: './chapter-start.component.html',

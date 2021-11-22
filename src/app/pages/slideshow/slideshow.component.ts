@@ -1,4 +1,12 @@
-import {ChangeDetectorRef, Component, ElementRef, HostListener, OnDestroy, ViewChild} from '@angular/core';
+import {
+    AfterViewInit,
+    ChangeDetectorRef,
+    Component,
+    ElementRef,
+    HostListener,
+    OnDestroy,
+    ViewChild,
+} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Subscription} from 'rxjs';
 
@@ -7,7 +15,7 @@ import {Subscription} from 'rxjs';
     templateUrl: './slideshow.component.html',
     styleUrls: ['./slideshow.component.scss'],
 })
-export class SlideshowComponent implements OnDestroy {
+export class SlideshowComponent implements AfterViewInit, OnDestroy {
     @ViewChild('slideshow') public slideshow!: ElementRef<HTMLElement>;
 
     public slideIndex: number = 1;
@@ -20,7 +28,9 @@ export class SlideshowComponent implements OnDestroy {
         private route: ActivatedRoute,
         private router: Router,
         private changeDetectorRef: ChangeDetectorRef
-    ) {
+    ) {}
+
+    public ngAfterViewInit(): void {
         this.subscriptions.push(
             this.route.params.subscribe((params) => {
                 const index = Number.parseInt(params['index']);
