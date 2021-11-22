@@ -112,6 +112,8 @@ body {
     background-color: var(--color--body-background);
     color: var(--color--body-foreground);
 
+    overflow-x: hidden;
+
     width: 100%;
 
     font-size: 1.8rem;
@@ -127,11 +129,12 @@ body {
 
 // SLIDES
 .slide {
-    width: 100vw;
+    position: relative;
+
     height: 100vh;
 
     > .background-container {
-        position: fixed;
+        position: absolute;
         inset: 0;
         z-index: -1;
 
