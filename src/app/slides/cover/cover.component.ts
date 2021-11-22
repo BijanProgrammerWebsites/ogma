@@ -9,4 +9,5 @@ export class CoverComponent {
     @Input() public heading!: string;
     @Input() public professor!: string;
     @Input() public creators!: string[];
+    @Input() public footer!: string[];
 }

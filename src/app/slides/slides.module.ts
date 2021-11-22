@@ -5,10 +5,11 @@ import {TableOfContentsComponent} from './table-of-contents/table-of-contents.co
 import {PipesModule} from '../pipes/pipes.module';
 import {ChapterStartComponent} from './chapter-start/chapter-start.component';
 import {TwoColumnComponent} from './two-column/two-column.component';
+import {IconsModule} from '../icons/icons.module';
 
 @NgModule({
     declarations: [CoverComponent, TableOfContentsComponent, ChapterStartComponent, TwoColumnComponent],
     exports: [CoverComponent, TableOfContentsComponent, ChapterStartComponent, TwoColumnComponent],
-    imports: [CommonModule, PipesModule],
+    imports: [CommonModule, PipesModule, IconsModule],
 })
 export class SlidesModule {}

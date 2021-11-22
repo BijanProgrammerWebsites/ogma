@@ -7,11 +7,19 @@
         <h1>{{ heading }}</h1>
 
         <div class="label">professor:</div>
-        <div class="name">{{ professor }}</div>
+        <div class="value">{{ professor }}</div>
 
         <div class="label">creators:</div>
-        <ul class="name-list">
+        <ul class="value">
             <li *ngFor="let creator of creators">{{ creator }}</li>
         </ul>
+    </div>
+
+    <div class="footer">
+        <div class="kharazmi-logo">
+            <icon-kharazmi></icon-kharazmi>
+        </div>
+
+        <p *ngFor="let part of footer">{{ part }}</p>
     </div>
 </div>

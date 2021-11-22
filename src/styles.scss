@@ -56,7 +56,7 @@
     --color--popper-background: hsl(0, 0%, 20%);
     --color--popper-foreground: hsl(0, 0%, 98%);
 
-    --full-width: 120rem;
+    --full-width: 160rem;
     --full-width-padding-inline: calc(max(100% - var(--full-width), 4rem) / 2);
 
     --animation--duration--fast: 0.1s;
@@ -107,6 +107,15 @@ button {
         background-color: var(--color--button-disabled-background) !important;
         color: var(--color--button-disabled-foreground) !important;
     }
+}
+
+svg {
+    fill: currentColor !important;
+
+    display: block;
+
+    width: 1em !important;
+    height: 1em !important;
 }
 
 // MAIN
