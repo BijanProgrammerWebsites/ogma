@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, OnDestroy, ViewChild} from '@angular/core';
+import {ChangeDetectorRef, Component, ElementRef, HostListener, OnDestroy, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Subscription} from 'rxjs';
 
@@ -16,11 +16,16 @@ export class SlideshowComponent implements OnDestroy {
 
     private subscriptions: Subscription[] = [];
 
-    public constructor(private route: ActivatedRoute, private router: Router) {
+    public constructor(
+        private route: ActivatedRoute,
+        private router: Router,
+        private changeDetectorRef: ChangeDetectorRef
+    ) {
         this.subscriptions.push(
             this.route.params.subscribe((params) => {
                 const index = Number.parseInt(params['index']);
                 this.slideIndex = isNaN(index) ? 1 : index;
+                this.changeDetectorRef.detectChanges();
             })
         );
     }

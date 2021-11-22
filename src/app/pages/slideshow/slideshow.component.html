@@ -10,4 +10,19 @@
     <slide-table-of-contents [items]="tableOfContents">
         <div background></div>
     </slide-table-of-contents>
+
+    <slide-chapter-start
+        [index]="0"
+        [heading]="tableOfContents[0]"
+        verticalPosition="bottom"
+        horizontalPosition="center"
+    >
+        <div background></div>
+    </slide-chapter-start>
+</div>
+
+<div class="slide-number-container">
+    <div class="slide-number">{{ slideIndex }}</div>
+    <div class="separator">of</div>
+    <div class="slides-count">{{ slidesCount }}</div>
 </div>
