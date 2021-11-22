@@ -1,4 +1,4 @@
-<div class="slideshow" [style.--slide-index]="slideIndex">
+<div #slideshow class="slideshow" [style.--slide-index]="slideIndex">
     <slide-cover
         heading="Data Visualization Using Ogma"
         professor="Dr. Ashrafi"
@@ -7,7 +7,7 @@
         <div background></div>
     </slide-cover>
 
-    <slide-table-of-contents>
+    <slide-table-of-contents [items]="tableOfContents">
         <div background></div>
     </slide-table-of-contents>
 </div>

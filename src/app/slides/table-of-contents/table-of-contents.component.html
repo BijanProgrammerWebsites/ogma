@@ -4,13 +4,17 @@
     </div>
 
     <div class="content">
-        <h1>Table of Contents</h1>
+        <header>
+            <h1>Table of Contents</h1>
+        </header>
 
-        <ul>
-            <li *ngFor="let item of items; let index = index">
-                <div class="index">{{ index }}</div>
-                <div class="item">{{ item }}</div>
-            </li>
-        </ul>
+        <main>
+            <ul>
+                <li *ngFor="let item of items; let index = index">
+                    <div class="index">{{ index + 1 }}</div>
+                    <div class="item">{{ item }}</div>
+                </li>
+            </ul>
+        </main>
     </div>
 </div>
