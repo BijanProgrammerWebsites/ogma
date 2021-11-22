@@ -1,0 +1,29 @@
+.slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    .content {
+        display: grid;
+        grid-template-columns: auto 3fr;
+        gap: 2rem;
+
+        padding: 4rem;
+
+        h1 {
+            grid-column: span 2;
+        }
+
+        .title {
+        }
+
+        .name,
+        .name-list li {
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+
+        .name-list {
+        }
+    }
+}

@@ -1,15 +1,17 @@
 <div class="slide">
-    <div class="background">
-        <ng-content select="background"></ng-content>
+    <div class="background-container">
+        <ng-content select="[background]"></ng-content>
     </div>
 
-    <h1>{{ heading }}</h1>
+    <div class="content">
+        <h1>{{ heading }}</h1>
 
-    <div class="label">professor:</div>
-    <div class="name">{{ professor }}</div>
+        <div class="label">professor:</div>
+        <div class="name">{{ professor }}</div>
 
-    <div class="label">creators:</div>
-    <ul class="name-list">
-        <li *ngFor="let creator of creators">{{ creator }}</li>
-    </ul>
+        <div class="label">creators:</div>
+        <ul class="name-list">
+            <li *ngFor="let creator of creators">{{ creator }}</li>
+        </ul>
+    </div>
 </div>

@@ -1,0 +1,10 @@
+.slideshow {
+    display: flex;
+    flex-direction: row;
+
+    slide-cover {
+        [background] {
+            background-image: url('~src/app/illustrations/cover/cover.component.svg');
+        }
+    }
+}
