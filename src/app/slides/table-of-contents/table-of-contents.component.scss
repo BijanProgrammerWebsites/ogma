@@ -15,10 +15,8 @@
             ul {
                 flex: 1;
 
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                align-content: flex-start;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
                 gap: 4rem;
 
                 li {
@@ -46,6 +44,7 @@
                     }
 
                     .item {
+                        font-size: 1.2em;
                         font-weight: 500;
                     }
                 }
