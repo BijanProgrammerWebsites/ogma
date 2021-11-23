@@ -63,9 +63,39 @@
         }
     }
 
+    slide-chapter-start:nth-of-type(2) {
+        [background] {
+            background-image: url('~src/app/illustrations/network2/network2.component.svg');
+        }
+    }
+
     slide-two-column:nth-of-type(4) {
         [background] {
             background-image: url('~src/app/illustrations/big-data-in-a-cube/big-data-in-a-cube.component.svg');
+        }
+    }
+
+    slide-two-column:nth-of-type(5),
+    slide-two-column:nth-of-type(6),
+    slide-two-column:nth-of-type(7),
+    slide-two-column:nth-of-type(8),
+    slide-two-column:nth-of-type(9) {
+        [background] {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+
+            .icon {
+                font-size: 48rem;
+            }
+        }
+
+        &[position='left'] {
+            [background] {
+                .icon {
+                    grid-column: 2;
+                }
+            }
         }
     }
 }
