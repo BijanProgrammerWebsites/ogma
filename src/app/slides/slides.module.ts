@@ -7,6 +7,7 @@ import {ChapterStartComponent} from './chapter-start/chapter-start.component';
 import {TwoColumnComponent} from './two-column/two-column.component';
 import {IconsModule} from '../icons/icons.module';
 import {ConnectedIslandsComponent} from './connected-islands/connected-islands.component';
+import {ThanksComponent} from './thanks/thanks.component';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import {ConnectedIslandsComponent} from './connected-islands/connected-islands.c
         ChapterStartComponent,
         TwoColumnComponent,
         ConnectedIslandsComponent,
+        ThanksComponent,
     ],
     exports: [
         CoverComponent,
@@ -22,6 +24,7 @@ import {ConnectedIslandsComponent} from './connected-islands/connected-islands.c
         ChapterStartComponent,
         TwoColumnComponent,
         ConnectedIslandsComponent,
+        ThanksComponent,
     ],
     imports: [CommonModule, PipesModule, IconsModule],
 })
