@@ -10,6 +10,7 @@ import {GreenArrowsComponent} from './green-arrows/green-arrows.component';
 import {Network1Component} from './network1/network1.component';
 import {Network2Component} from './network2/network2.component';
 import {Network3Component} from './network3/network3.component';
+import {OgmaComponent} from './ogma/ogma.component';
 import {WatermarkComponent} from './watermark/watermark.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import {WatermarkComponent} from './watermark/watermark.component';
         Network1Component,
         Network2Component,
         Network3Component,
+        OgmaComponent,
         WatermarkComponent,
     ],
     imports: [CommonModule],
@@ -36,6 +38,7 @@ import {WatermarkComponent} from './watermark/watermark.component';
         Network1Component,
         Network2Component,
         Network3Component,
+        OgmaComponent,
         WatermarkComponent,
     ],
 })

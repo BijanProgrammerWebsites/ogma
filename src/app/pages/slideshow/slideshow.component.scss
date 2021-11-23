@@ -16,7 +16,7 @@
 
     slide-cover {
         [background] {
-            background-image: url('~src/app/illustrations/cover/cover.component.svg');
+            background-image: url('~src/app/illustrations/ogma/ogma.component.svg');
         }
     }
 
@@ -41,6 +41,12 @@
     slide-two-column:nth-of-type(2) {
         [background] {
             background-image: url('~src/app/illustrations/coin-tree/coin-tree.component.svg');
+        }
+    }
+
+    slide-two-column:nth-of-type(3) {
+        [background] {
+            background-image: url('~src/app/illustrations/global-social-network2/global-social-network2.component.svg');
         }
     }
 
