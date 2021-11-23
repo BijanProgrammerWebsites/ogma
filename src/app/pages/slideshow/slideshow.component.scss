@@ -43,6 +43,12 @@
             background-image: url('~src/app/illustrations/coin-tree/coin-tree.component.svg');
         }
     }
+
+    slide-connected-islands:nth-of-type(1) {
+        [background] {
+            background-image: url('~src/app/illustrations/green-arrows/green-arrows.component.svg');
+        }
+    }
 }
 
 .slide-number-container {

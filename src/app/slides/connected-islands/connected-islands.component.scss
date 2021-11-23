@@ -15,23 +15,25 @@
             ol {
                 flex: 1;
 
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-                gap: 4rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6rem;
 
                 li {
-                    flex: 1 0 auto;
-
                     position: relative;
 
                     min-width: 30rem;
 
+                    margin: auto;
                     padding-block: 4rem;
+
+                    border-radius: 1rem;
 
                     font-size: 2.4rem;
 
                     .index {
-                        color: var(--color--watermark);
+                        color: var(--color--success-fade);
 
                         position: absolute;
                         top: 0;

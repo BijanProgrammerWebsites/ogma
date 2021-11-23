@@ -21,6 +21,14 @@ export class SlideshowComponent implements AfterViewInit, OnDestroy {
     public slideIndex: number = 1;
 
     public tableOfContents: string[] = ['What is Data Visualization?', 'Age of Big Data', 'Pros & Cons', 'Ogma'];
+    public dataVisualizationBenefits: string[] = [
+        'Finding errors',
+        'Better analysis',
+        'Identifying patterns',
+        'Quick action',
+        'Understanding the story',
+        'Exploring business insights',
+    ];
 
     private subscriptions: Subscription[] = [];
 
