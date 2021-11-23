@@ -6,6 +6,9 @@
     --warning-hue: 20;
     --danger-hue: 0;
 
+    --color--ogma-red: hsl(354, 77%, 63%);
+    --color--ogma-blue: hsl(243, 27%, 15%);
+
     --color--primary: hsl(var(--primary-hue), 100%, 60%);
     --color--primary-fade: hsl(var(--primary-hue), 100%, 94%);
     --color--primary-opposite: hsl(0, 0%, 98%);
@@ -26,10 +29,11 @@
     --color--danger-fade: hsl(var(--danger-hue), 100%, 90%);
     --color--danger-opposite: hsl(0, 0%, 98%);
 
-    --color--watermark: hsl(0, 0%, 80%);
+    //--color--watermark: hsl(0, 0%, 80%);
+    --color--watermark: hsl(354, 77%, 63%);
 
     --color--body-background: hsl(0, 0%, 98%);
-    --color--body-foreground: hsl(0, 0%, 10%);
+    --color--body-foreground: var(--color--ogma-blue);
 
     --color--overlay-background: hsla(0, 0%, 0%, 0.94);
     --color--overlay-foreground: hsl(0, 0%, 98%);

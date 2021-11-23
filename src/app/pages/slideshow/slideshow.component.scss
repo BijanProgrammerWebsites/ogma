@@ -16,7 +16,8 @@
 
     slide-cover {
         [background] {
-            background-image: url('~src/app/illustrations/ogma/ogma.component.svg');
+            background-image: url('~src/app/illustrations/ogma/ogma.component.svg'),
+                url('~src/app/illustrations/watermark/watermark.component.svg');
         }
     }
 
@@ -53,6 +54,12 @@
     slide-connected-islands:nth-of-type(1) {
         [background] {
             background-image: url('~src/app/illustrations/green-arrows/green-arrows.component.svg');
+        }
+    }
+
+    slide-thanks {
+        [background] {
+            background-image: url('~src/app/illustrations/thanks/thanks.component.svg');
         }
     }
 }

@@ -7,5 +7,9 @@
     .content {
         display: grid;
         place-items: center;
+
+        h1 {
+            color: var(--color--primary);
+        }
     }
 }
