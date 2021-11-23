@@ -12,12 +12,7 @@
         <div background></div>
     </slide-table-of-contents>
 
-    <slide-chapter-start
-        [index]="0"
-        [heading]="tableOfContents[0]"
-        verticalPosition="bottom"
-        horizontalPosition="center"
-    >
+    <slide-chapter-start [index]="0" [heading]="tableOfContents[0]" verticalPosition="top" horizontalPosition="left">
         <div background></div>
     </slide-chapter-start>
 
@@ -65,6 +60,22 @@
     <slide-connected-islands heading="Benefits" [items]="dataVisualizationBenefits">
         <div background></div>
     </slide-connected-islands>
+
+    <slide-two-column heading="Big Data" position="right">
+        <div background></div>
+
+        <p>
+            As the age of Big Data kicks into high-gear, visualization is an increasingly key tool to make sense of the
+            trillions of rows of data generated every day.
+        </p>
+
+        <p>
+            Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the
+            trends and outliers.
+        </p>
+
+        <p>A good visualization tells a story, removing the noise from data and highlighting the useful information.</p>
+    </slide-two-column>
 
     <slide-thanks>
         <div background></div>

@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
+import {BigDataInACubeComponent} from './big-data-in-a-cube/big-data-in-a-cube.component';
 import {CoinTreeComponent} from './coin-tree/coin-tree.component';
 import {CoverComponent} from './cover/cover.component';
 import {GlobalSocialNetwork1Component} from './global-social-network1/global-social-network1.component';
@@ -16,6 +17,7 @@ import {WatermarkComponent} from './watermark/watermark.component';
 
 @NgModule({
     declarations: [
+        BigDataInACubeComponent,
         CoinTreeComponent,
         CoverComponent,
         GlobalSocialNetwork1Component,
@@ -31,6 +33,7 @@ import {WatermarkComponent} from './watermark/watermark.component';
     ],
     imports: [CommonModule],
     exports: [
+        BigDataInACubeComponent,
         CoinTreeComponent,
         CoverComponent,
         GlobalSocialNetwork1Component,

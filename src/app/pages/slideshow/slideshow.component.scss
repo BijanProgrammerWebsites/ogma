@@ -29,7 +29,7 @@
 
     slide-chapter-start:nth-of-type(1) {
         [background] {
-            background-image: url('~src/app/illustrations/network1/network1.component.svg');
+            background-image: url('~src/app/illustrations/network3/network3.component.svg');
         }
     }
 
@@ -60,6 +60,12 @@
     slide-thanks {
         [background] {
             background-image: url('~src/app/illustrations/thanks/thanks.component.svg');
+        }
+    }
+
+    slide-two-column:nth-of-type(4) {
+        [background] {
+            background-image: url('~src/app/illustrations/big-data-in-a-cube/big-data-in-a-cube.component.svg');
         }
     }
 }
